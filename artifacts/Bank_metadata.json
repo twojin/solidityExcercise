@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "CallFail",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practise/Ban.sol": "Bank"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practise/Ban.sol": {
+			"keccak256": "0xd2a68671ca325546363cb169ee4e32184dc39d77380f823450eed4a1e318c122",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ce6dfed3375994b0a5e7d2e24503f9225b0b697292b6c98af821fd1961028acf",
+				"dweb:/ipfs/QmY2ZU1GeEsntvhH68b5DhPh6TmiDhvAaRPhkTMou9axHP"
+			]
+		},
+		"practise/IBank.sol": {
+			"keccak256": "0x50c21edfdc08891f643af7ef04bc459b13987db1169598f69884db9618eef074",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://830ca3551c588a7f18fa837e03b1151e851f51a051f6c3879e411f39e8c4d391",
+				"dweb:/ipfs/QmbgifjGyhJFRBtT6FgGGBgxoouZwoPi9k4GfHqA2rZM4y"
+			]
+		}
+	},
+	"version": 1
+}
