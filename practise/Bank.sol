@@ -15,7 +15,7 @@ contract Bank is IBank{
         owner = msg.sender;
     }
 
-    function withdraw(uint _amount) override external {
+    function withdraw(uint _amount) override virtual  external {
         require(owner == msg.sender, "Only is allowed to withdraw ");
         callETH(payable(msg.sender), _amount);
     }
