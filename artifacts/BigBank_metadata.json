@@ -16,6 +16,19 @@
 				"type": "error"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "deposit",
 				"outputs": [],
@@ -62,7 +75,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practise/Bank.sol": "Bank"
+			"practise/BigBank.sol": "BigBank"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -82,6 +95,14 @@
 			"urls": [
 				"bzz-raw://27bf37e887c8ce89e5fdec37d48ee58ede08043be7e0b176644b2ad8c824fc56",
 				"dweb:/ipfs/QmNwQTw5BTijkqEf4LpftaqRomoarUiM7d4J5SVmT2zBqZ"
+			]
+		},
+		"practise/BigBank.sol": {
+			"keccak256": "0x5e9bfb9b7159a5eba9305a1dde58732083fe41c9e5e0a4fe1710169dee597325",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://94dbea5640dfb1e13cb654f03001fb74d7bd38b2d04bebf1bc8990b495608562",
+				"dweb:/ipfs/QmNuivDTsxoLW8sks7R9DyKRkho29ot3rWyNMzfEkYwcGu"
 			]
 		},
 		"practise/IBank.sol": {

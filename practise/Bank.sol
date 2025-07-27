@@ -9,7 +9,7 @@ pragma solidity ^0.8.4;
 import './IBank.sol';
 contract Bank is IBank{
     mapping(address => uint) ledger;
-    address owner;
+    address public  owner;
     error CallFail();
     constructor() {
         owner = msg.sender;
@@ -27,7 +27,7 @@ contract Bank is IBank{
         }
     }
 
-    function deposit() external payable{
+    function deposit() external virtual  payable{
         require(msg.value > 0, "Disposit must be > 0");
         ledger[msg.sender] += msg.value;
     }

@@ -11,42 +11,39 @@
 				"type": "constructor"
 			},
 			{
-				"inputs": [],
-				"name": "CallFail",
-				"type": "error"
-			},
-			{
-				"inputs": [],
-				"name": "deposit",
-				"outputs": [],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
+					{
+						"internalType": "contract IBank",
+						"name": "bank",
+						"type": "address"
+					},
 					{
 						"internalType": "uint256",
 						"name": "_amount",
 						"type": "uint256"
 					}
 				],
-				"name": "withdraw",
+				"name": "adminWithdraw",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -62,7 +59,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"practise/Bank.sol": "Bank"
+			"practise/Admin.sol": "Admin"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -76,12 +73,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"practise/Bank.sol": {
-			"keccak256": "0xa6ac60a5e3b79d84a47cb725276781d00c0860b2c916a1aa3840f3e2cb603323",
+		"practise/Admin.sol": {
+			"keccak256": "0x5ad6f056d56c81ae4660639d7fd02e67609182b331544d8d627962f4070060b0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://27bf37e887c8ce89e5fdec37d48ee58ede08043be7e0b176644b2ad8c824fc56",
-				"dweb:/ipfs/QmNwQTw5BTijkqEf4LpftaqRomoarUiM7d4J5SVmT2zBqZ"
+				"bzz-raw://47f6a4dd4b48cce8d23156aa052585bfbf80018a29932d7ae325a86d8adc06ff",
+				"dweb:/ipfs/QmZH4kzvsRKcjEZTinZfQc3F2doBBsdS1WMRaPLqGSDfH7"
 			]
 		},
 		"practise/IBank.sol": {
